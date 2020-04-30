@@ -23,6 +23,18 @@
     # Minimum version of the common language runtime (CLR) required by this module
     CLRVersion = '4.0'
 
+    # Modules that must be imported into the global environment prior to importing this module
+    RequiredModules  = @(
+    @{ModuleName = 'VMware.VimAutomation.Sdk'; ModuleVersion = '12.0.0.15939651'}
+    @{ModuleName = 'VMware.VimAutomation.Common'; ModuleVersion = '12.0.0.15939652'}
+    @{ModuleName = 'VMware.Vim'; ModuleVersion ='7.0.0.15939650'}
+    @{ModuleName = 'VMware.VimAutomation.Cis.Core'; ModuleVersion = '12.0.0.15939657'}
+    @{ModuleName = 'VMware.VimAutomation.Core'; ModuleVersion = '12.0.0.15939655'}
+    @{ModuleName = 'VMware.VimAutomation.Storage'; ModuleVersion = '12.0.0.15939648'}
+    @{ModuleName = 'VMware.VimAutomation.Vds'; ModuleVersion = '12.0.0.15940185'}
+    @{ModuleName = 'Vmware.vSphereDsc'; ModuleVersion = '2.1.0.58'}
+)
+
     # Functions to export from this module
     FunctionsToExport = @()
 
