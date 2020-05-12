@@ -5,7 +5,6 @@
 $configFile = [System.IO.Path]::ChangeExtension($MyInvocation.MyCommand.Path, 'json')
 if (Test-Path -Path $configFile)
 {
-
     $ConfigurationData = Get-Content -Path $configFile | ConvertFrom-Json
 }
 else
@@ -15,7 +14,7 @@ else
             @{
                 # policy with a dword datatype
                 NodeName   = 'localhost'
-                VcenterServerIP = '192.168.128.1'
+                VcenterServerIP = '10.10.10.100'
                 VsphereHostIP = '192.168.128.1'
                 VcenterLogin_UserName = "administrator@vsphere.local"
                 VcenterLogin_Password = 'P@ssword1'
